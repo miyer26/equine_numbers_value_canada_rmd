@@ -67,7 +67,7 @@ max_horses <- horse_pop %>%
 kable(max_horses, caption = "Table 1. Range of number of horses in each province between 1940-1972")
 ```
 
-Below we zoom in and look at the province of Alberta:
+Below we zoom in and look at the province of `r max_horses$Province[1]`:
 
 ```{r plot province, fig.width=5, fig.height=4, fig.cap = "Figure 2. Historical population of horses in Alberta.", out.width='100%'}
 province_plot <- horse_pop %>% 
